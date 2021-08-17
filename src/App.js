@@ -26,7 +26,7 @@ class App extends Component {
     return (
       <>
         <Layout>
-          <Responsive handlerParent={this.clickHandler} />
+          <Responsive />
         </Layout>
         {/* <Layout>
           <Sider>
