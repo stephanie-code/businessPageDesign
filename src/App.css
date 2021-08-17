@@ -132,3 +132,10 @@
 .ant-col-xs-5 {
   max-width: 30px;
 }
+
+.ant-btn-round{
+  max-width: 1000px;
+  min-width: 200px;
+  text-align: start;
+  height: 50px !important;
+}

@@ -1,8 +1,9 @@
-import { Typography, Menu, Layout } from 'antd';
+import { Typography, Menu, Layout, Tabs } from 'antd';
 
 // Used in acctOverviewComp.js
 export const { Title, Text } = Typography;
 export const { Header, Content, Footer, Sider } = Layout;
+export const { TabPane } = Tabs;
 
 export const optionsAwareness = [
     { label: 'Brand Awareness', value: 'Brand Awareness' },
