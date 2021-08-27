@@ -1,9 +1,13 @@
-import { Typography, Menu, Layout, Tabs } from 'antd';
+
+
+import { Typography, Menu, Layout, Tabs, Select } from 'antd';
 
 // Used in acctOverviewComp.js
 export const { Title, Text } = Typography;
 export const { Header, Content, Footer, Sider } = Layout;
 export const { TabPane } = Tabs;
+export const { Option } = Select;
+export const { SubMenu } = Menu;
 
 export const optionsAwareness = [
     { label: 'Brand Awareness', value: 'Brand Awareness' },
@@ -23,27 +27,14 @@ export const optionsConversion = [
     { label: 'Store Traffic', value: 'Store Traffic' },
 ];
 
-//Common to acctOverviewComp.js, campaComp.js 
+//Common to acctOverviewComp.js, campaComp.js , responsiveCampaign.js
 export const campa_button = {
     // height: '40px',
     background: '#eeeeee',
     borderRadius: '7px',
     color: 'black'
 }
-//Common to acctOverviewComp.js, campaComp.js and sidebarComp.js
-export const menu = (
-    <Menu>
-        <Menu.Item key="1">
-        Testing for long names
-        </Menu.Item>
-        <Menu.Item key="2">
-            User 2
-        </Menu.Item>
-        <Menu.Item key="3">
-            User 3
-        </Menu.Item>
-    </Menu>
-);
+
 
 //Used in campaComp.js
 export const columns = [
@@ -52,7 +43,7 @@ export const columns = [
     width: 150,
     dataIndex: 'name',
     key: 'name',
-    fixed: 'left',
+    // fixed: 'left',
   },
   {
     title: 'Delivery',

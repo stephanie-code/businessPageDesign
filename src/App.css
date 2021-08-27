@@ -1,6 +1,21 @@
+/* App.js 
+Edited by Stephy*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .App {
   text-align: center;
 }
+
+.header_row{
+  color:white;
+  font-size: xx-large;
+  letter-spacing: 1.5px;
+  background: #001529 !important;
+}
+/* End of App.js styling */
 
 .ant-typography + h2.ant-typography{
    margin-top: 0em !important;
@@ -91,6 +106,25 @@
 }
 
 /* responsive sidebar */
+.sidebar_title{
+  background: rgba(0, 0, 0, 0.85) !important;
+    color: white !important;
+    display: flex ;
+    flex-direction: row !important;
+    justify-content: space-around;
+    align-items:center;
+    height: 50px;
+    font-size: medium;
+}
+.sider_drawer_menu{
+  text-transform: capitalize;
+}
+.sider_divider{
+  font-weight: bold !important;
+  font-size: larger !important;
+  flex-direction: column;
+  align-items: flex-start;
+}
 .logo1 {
   height: 20px !important;
   margin: 16px 10px;
@@ -138,4 +172,84 @@
   min-width: 200px;
   text-align: start;
   height: 50px !important;
+}
+
+/* Account Overview Component */
+.main_AcctCompo, .main_campaign{
+  margin: 10px;
+  padding-right: 20px;
+  padding-left: 10px;
+}
+.title_AcctCompo, .header_campaign{
+  font-size: 24px !important;
+  font-weight: bold !important;
+}
+.smallDashedButton{
+  justify-content: flex-end;
+  display: flex;
+  height: 50px;
+  align-items: center;
+}
+.main-div-content{
+  padding: 0px 40px;
+}
+.greeting-text1{
+  font-size: 26px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+.greeting-text2{
+  font-size: 18px;
+  color: green;
+}
+.content{
+  background: white;
+  padding-top: 20px;
+}
+.campaign-tends-heading{
+  font-weight: bold;
+  font-size: 24px;
+}
+.campaign-trends-content{
+  /* display: none !important; */
+  width: 300px;
+  display: flex !important;
+  flex-direction: row !important;
+  text-align: center !important;
+  padding-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.content2{
+  background: white;
+}
+/* End of Account Overview Component styling */
+
+/* SidebarCompo.js */
+.sider_class{
+  z-index: 1 !important  ;
+  height: 100vh !important;
+}
+
+/* End of sidebarComp.js */
+
+/* ResponsiveCampaign.js */
+
+.header_campaign_col3{
+  display: flex !important;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+/* End of ResponsiveCampaign.jss */
+@media only screen and (max-width:320px) {
+  .App{font-size: 12px};  
+}
+
+/* Drawer in campaign page  */
+.campaign_details_content{
+  font-size: 18;
+}
+.campaign_details_title{
+  font-size: 18;
+  font-weight: bold;
 }
